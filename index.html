@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HW 19</title>
+  <link href="css/style.css" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   <script>
+  $( function() {
+    $( "#tabs" ).tabs();
+  } );
+  </script>
+ <style> 
+  @font-face {
+     font-family: myFirstFont;
+     src: url(CPLKirkwood.otf);
+  }
+  
+  * {
+     font-family: myFirstFont;
+  }
+  </style>
+</head>
+<body>
+  <div class="jumbotron text-center">
+    <h1>My First Portfolio</h1>
+    <img src="images/logo1.jpg" width="100">
+    <p>Please take it easy on me this was hard, and I've realized I'm definitely going to use a cms builder for a portfolio in the future </p>
+    <button id="demo" onclick="myFunction()">Download Resume</button>
+  </div>
+  
+  <div id="accordion">
+
+    <div class="card">
+      <div class="card-header">
+        <a class="card-link" data-toggle="collapse" href="#collapseOne">
+          Work
+      </div>
+      <div id="collapseOne" class="collapse show" data-parent="#accordion">
+        <div class="card-body">
+          <section class="flexContainer">
+            <div>
+              <img src="images/DOI.4.PNG" width="300">
+              <h3>Department of Interior Website Redesign</h3>
+              <p>This project I focused on navigation and overall aesthetic of the homepage for the department of interior</p>
+            </div>
+            <div>
+              <img src="images/MH.interaction.gif" width="300">
+              <h3>MercyHouse Non-Profit Redesign</h3>
+              <p>My role in this project consited mostly in the assitance of iterating the visual design as well as interactions for the website</p>
+            </div>
+        </div>
+      </div>
+    </div>
+  
+    <div id=content class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+          Skills
+        </a>
+      </div>
+      <div id="collapseTwo" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          <p>MAKING HORRIBLE WEBSITES</p>
+          <p>Adobe CC product</p>
+          <p>Photoshop</p>
+          <p>Premiere</p>
+          <p>Illustrator</p>
+          <p>Spark Post</p>
+          <p>Figma</p>
+          <p>Invision</p>
+          <p>Github</p>
+          <p>Canva</p>
+          <p>Basic knowledge in HTML, CSS, Javascript, & Bootstrap</p>
+          <p>Excel</p>
+          <p>Knowledge in CMS website builders such as Wordpress, Wix, & Wordflow</p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+          Contact
+        </a>
+      </div>
+      <div id="collapseThree" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          <img src="images/iceking">
+          <p>Want to get in contact to let me know how bad this page is?</p>
+          <p>Email: Emilybeck307664@gmail.com</p>
+          <p>LinkedIn: Emily Beckius</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <ul>
+      <li>ABOUT</li>
+      <li>SKILLS</li>
+      <li>WORK</li>
+      <li>CONTACT</li>
+    </ul>
+  </footer>
+  <script src="index.js"></script>
+</body>
+</html>
